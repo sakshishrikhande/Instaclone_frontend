@@ -1,0 +1,316 @@
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1vw;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Landing Page Styling */
+
+.main,
+.wrapper,
+.error-message {
+  width: 90vw;
+  min-height: 80vh;
+  max-height: auto;
+  margin: 10vh auto;
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  background: linear-gradient(5deg, rgb(0, 0, 99), rgb(92, 92, 255));
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.wrapper .landing-image-container {
+  width: 35%;
+  height: 35%;
+}
+
+.wrapper .landing-image-container .landing-image {
+  width: 100%;
+  height: 100%;
+}
+
+.wrapper .landing-description {
+  width: 30%;
+  height: 100%;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wrapper .landing-description .landing-text {
+  font-size: 4em;
+  font-weight: 900;
+}
+.wrapper .landing-description .landing-text span {
+  font-size: 1.15em;
+}
+
+.wrapper .landing-description .enter-site {
+  width: 50%;
+  padding: 3% 5%;
+  font-size: 2em;
+  font-weight: 700;
+  text-decoration: none;
+  background-color: black;
+  border-radius: 5px;
+}
+
+.wrapper .landing-description .enter-site:hover {
+  background-color: white;
+}
+
+.wrapper .landing-description .enter-site .enter-link {
+  text-decoration: none;
+  color: white;
+}
+
+.wrapper .landing-description .enter-site:hover .enter-link {
+  color: black;
+}
+
+.wrapper .landing-description .enter-site:active {
+  transform: scale(1.1);
+}
+
+/* Postview Page Styling */
+
+.main .main-header {
+  width: 100%;
+  height: 20%;
+  margin: auto;
+  padding: 0 5%;
+  border-bottom: 1px solid black;
+  box-sizing: border-box;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main .main-header .app-spec {
+  width: 20%;
+  height: 100%;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.main .main-header .app-spec .logo-container {
+  width: 16%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.main .main-header .app-spec .logo-container .logo {
+  width: 100%;
+  height: 100%;
+}
+
+.main .main-header .app-spec .logo-container .app-name {
+  width: 60%;
+  height: 100%;
+  font-size: 1.3em;
+  font-weight: 700;
+}
+
+.main .main-header .create-post-container {
+  width: 3%;
+  height: 100%;
+}
+
+.main .main-header .create-post-container .create-post {
+  width: 100%;
+  height: 100%;
+}
+
+.main .post-container {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  padding: 10%;
+  box-sizing: border-box;
+}
+
+.main .post-container .post {
+  width: 40%;
+  height: 20%;
+  margin: 0 auto 5%;
+  border: 2px solid black;
+  border-radius: 6px;
+  background-color: white;
+  box-sizing: border-box;
+}
+
+.main .post-container .post .header {
+  width: 100%;
+  height: 20%;
+  margin: 0;
+  padding: 3% 4% 5%;
+  box-sizing: border-box;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main .post-container .post .header .user-info {
+  width: 20%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.main .post-container .post .header .user-info .username {
+  width: 100%;
+  height: 30%;
+  margin: 0;
+  font-size: 1.1em;
+  font-weight: 700;
+}
+
+.main .post-container .post .header .user-info .location {
+  width: 100%;
+  height: 30%;
+  margin: 0;
+  font-size: 0.8em;
+  font-weight: 500;
+}
+
+.main .post-container .post .header .more-options {
+  width: 7%;
+  height: 100%;
+  cursor: pointer;
+  box-sizing: border-box;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.main .post-container .post .header .more-options .dot {
+  width: 3px;
+  height: 3px;
+  background-color: rgb(40, 40, 40);
+  border-radius: 100%;
+}
+
+.main .post-container .post .image-container {
+  width: 100%;
+  /* height: 60%; */
+  height: 250px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main .post-container .post .image-container .image {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.main .post-container .post .footer {
+  width: 100%;
+  height: 20%;
+  margin: 0;
+  padding: 3%;
+  box-sizing: border-box;
+}
+
+.main .post-container .post .footer .post-spec {
+  width: 100%;
+  height: 50%;
+}
+
+.main .post-container .post .footer .post-spec .post-options {
+  width: 100%;
+  height: 50%;
+  margin: 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.main .post-container .post .footer .post-spec .post-options .icons {
+  width: 20%;
+  height: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main .post-container .post .footer .post-spec .post-options .icons .heart-icon,
+.main .post-container .post .footer .post-spec .post-options .icons .rocket-icon {
+  width: 20%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.main .post-container .post .footer .post-spec .post-options .icons .heart-icon .like-icon,
+.main .post-container .post .footer .post-spec .post-options .icons .rocket-icon .share-icon {
+  width: 100%;
+  height: 100%;
+}
+
+.main .post-container .post .footer .post-spec .post-options .date {
+  width: 20%;
+  height: 100%;
+  font-size: 0.8em;
+  font-weight: 600;
+}
+
+.main .post-container .post .footer .post-spec .post-likes {
+  width: 100%;
+  height: 50%;
+  margin-top: -2%;
+  font-size: 0.8em;
+  font-weight: 600;
+}
+
+.main .post-container .post .footer .image-description {
+  width: 100%;
+  height: 50%;
+  font-size: 1em;
+  font-weight: 600;
+}
+
+/* Page Not Found Page Styling */
+
+.error-message {
+  text-align: center;
+}
+
+.error-message .error-type {
+  margin: 0;
+  font-size: 10em;
+  font-weight: 900;
+}
+
+.error-message .error-type span {
+  font-size: 1.4em;
+  line-height: 0;
+}
+
+.error-message .error-description {
+  font-size: 2.8em;
+  font-weight: 900;
+}
